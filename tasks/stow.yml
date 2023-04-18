@@ -1,0 +1,33 @@
+---
+- name: Ensure git is installed
+  package:
+    name: git
+    state: present
+
+- name: Clone dotfiles repository
+  git:
+    repo: "{{ dotfiles_repo }}"
+    dest: "~/.dotfiles"
+    version: "{{ dotfiles_repo_version }}"
+    accept_hostkey: "{{ dotfiles_repo_accept_hostkey }}"
+
+- name: Ensure stow installed
+  package:
+    name: stow
+    state: present
+
+- name: Build stow directories list
+  find:
+    paths: ["~/.dotfiles"]
+    recurse: false
+    file_type: directory
+  register: files
+  become: false
+
+- name: Stow dotfiles
+  environment:
+    STOW_DIR: "{{ item.path | dirname }}"
+  shell: "stow {{ item.path | basename }}"
+  with_items: "{{ files.files }}"
+  changed_when: false
+  become: false

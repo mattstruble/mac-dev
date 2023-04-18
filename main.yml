@@ -1,0 +1,11 @@
+---
+- name: Configure host
+  gather_facts: false
+  hosts: all
+
+  vars_files:
+    - config.yml
+
+  tasks:
+    - import_tasks: tasks/stow.yml
+      tags: ["dotfiles"]

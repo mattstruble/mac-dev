@@ -1,4 +1,105 @@
 ---
+downloads: ~/.ansible-downloads/
+
+configure_dotfiles: false
+configure_terminal: false
+configure_osx: false
+configure_dock: true
+
 dotfiles_repo: https://github.com/mattstruble/dotfiles.git
 dotfiles_repo_version: master
 dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/Software/dotfiles
+
+dockitems_remove:
+  - Launchpad
+  - TV
+  - Podcasts
+  - "App Store"
+  - "System Settings"
+  - Finder
+
+homebrew_taps:
+  - homebrew/cask-fonts
+  - homebrew/core
+  - homebrew/cask
+  - 1password/tap
+
+homebrew_installed_packages:
+  - ansible-lint
+  - awscli
+  - aws-shell
+  - black
+  - checkmake
+  - curl
+  - gh
+  - git
+  - koekeishiya/formulae/skhd
+  - koekeishiya/formulae/yabai
+  - markdown-toc
+  - npm
+  - nvim
+  - pyenv
+  - pyenv-virtualenv
+  - python3
+  - reattach-to-user-namespace
+  - ripgrep
+  - ruff
+  - shellcheck
+  - shellharden
+  - stow
+  - sqlite
+  - terraform
+  - tmux
+  - uncrustify
+  - vagrant
+  - vulture
+  - wget
+  - write-good
+  - yaml-language-server
+  - yamllint
+  - yarn
+  - yubikey-agent
+  - zsh-history-substring-search
+  - zsh-syntax-highlighting
+  - zsh-autosuggestions
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - 1password-cli
+  - docker
+  - firefox
+  - font-meslo-lg-nerd-font
+  - iterm2
+  - slack
+  - sublime-text
+  - sublime-merge
+  - scroll-reverser
+  - obsidian
+  - flux
+  - godot
+  - discord
+  - yubico-yubikey-manager
+
+configure_sublime: false
+
+mas_email: ""
+mas_password: ""
+mas_installed_apps:
+  - { id: 443987910, name: "1Password" }
+  - { id: 595191960, name: "CopyClip" }
+  - { id: 1452453066, name: "Hidden Bar" }
+  - { id: 1472777122, name: "PayPal Honey" }
+  - { id: 1611378436, name: "Pure Paste" }
+  - { id: 1355679052, name: "Dropover" }
+  - { id: 803453959, name: "Slack" }
+  - { id: 1607635845, name: "Velja" }
+  - { id: 1452453066, name: "Hidden Bar" }
+
+composer_packages: []
+gem_packages: []
+npm_packages: []
+
+pip_packages:
+  - name: pynvim
+  - name: neovim

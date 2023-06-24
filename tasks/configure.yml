@@ -1,0 +1,5 @@
+---
+- name: Install iterm2 profile
+  ansible.builtin.copy:
+    src: files/iterm2/Default.json
+    dest: "/Library/Application Support/iTerm2/DynamicProfiles/Default.json"

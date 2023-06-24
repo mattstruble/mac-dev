@@ -34,14 +34,17 @@ homebrew_installed_packages:
   - curl
   - gh
   - git
+  - groovy
   - koekeishiya/formulae/skhd
   - koekeishiya/formulae/yabai
+  - lazygit
   - markdown-toc
   - npm
   - nvim
   - pyenv
   - pyenv-virtualenv
   - python3
+  - pyyaml
   - reattach-to-user-namespace
   - ripgrep
   - ruff
@@ -51,6 +54,7 @@ homebrew_installed_packages:
   - sqlite
   - terraform
   - tmux
+  - tree-sitter
   - uncrustify
   - vagrant
   - vulture

@@ -56,7 +56,6 @@ homebrew_installed_packages:
   - tmux
   - tree-sitter
   - uncrustify
-  - vagrant
   - vulture
   - wget
   - write-good
@@ -70,12 +69,13 @@ homebrew_installed_packages:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - 1password
   - 1password-cli
   - docker
-  - firefox
+  # - firefox
   - font-meslo-lg-nerd-font
   - iterm2
-  - slack
+  # - slack
   - sublime-text
   - sublime-merge
   - scroll-reverser
@@ -84,13 +84,13 @@ homebrew_cask_apps:
   - godot
   - discord
   - yubico-yubikey-manager
+  - vagrant
 
 configure_sublime: false
 
 mas_email: ""
 mas_password: ""
 mas_installed_apps:
-  - { id: 443987910, name: "1Password" }
   - { id: 595191960, name: "CopyClip" }
   - { id: 1452453066, name: "Hidden Bar" }
   - { id: 1472777122, name: "PayPal Honey" }

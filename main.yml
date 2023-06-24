@@ -26,9 +26,7 @@
     #   tags: ["osx"]
 
     - import_tasks: tasks/extra-packages.yml
-      tags: ["extra-packages"]
 
     - import_tasks: tasks/stow.yml
-      tags: ["dotfiles"]
 
     - import_tasks: tasks/configure.yml

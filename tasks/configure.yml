@@ -1,5 +1,7 @@
 ---
-- name: Install iterm2 profile
-  ansible.builtin.copy:
-    src: files/iterm2/Default.json
-    dest: "/Library/Application Support/iTerm2/DynamicProfiles/Default.json"
+- name: Link iterm2 profile
+  file:
+    src: "{{ playbook_dir }}/files/iterm2/Profiles.json"
+    dest: "~/Library/Application Support/iTerm2/DynamicProfiles/Profiles.json"
+    state: link
+    mode: 0644

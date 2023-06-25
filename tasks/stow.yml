@@ -7,7 +7,7 @@
 - name: Clone dotfiles repository
   git:
     repo: "{{ dotfiles_repo }}"
-    dest: "~/.dotfiles"
+    dest: "{{ dotfiles_repo_local_destination }}"
     version: "{{ dotfiles_repo_version }}"
     accept_hostkey: "{{ dotfiles_repo_accept_hostkey }}"
 
@@ -18,7 +18,7 @@
 
 - name: Build stow directories list
   find:
-    paths: ["~/.dotfiles"]
+    paths: ["{{ dotfiles_repo_local_destination }}"]
     recurse: false
     file_type: directory
   register: files

@@ -51,3 +51,6 @@ install: $(ZSH) $(BREW) $(XCODE) $(ANSIBLE) $(APPLICATIONS)
 
 run: install
 	ANSIBLE_SSH_PIPELINING=0 ansible-playbook -K -i inventory main.yml
+
+check: install
+	ANSIBLE_SSH_PIPELINING=0 ansible-playbook -K -i inventory main.yml --check

@@ -9,7 +9,7 @@ configure_dock: true
 dotfiles_repo: https://github.com/mattstruble/dotfiles.git
 dotfiles_repo_version: master
 dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/Software/dotfiles
+dotfiles_repo_local_destination: ~/.dotfiles
 
 dockitems_remove:
   - Launchpad
@@ -21,8 +21,6 @@ dockitems_remove:
 
 homebrew_taps:
   - homebrew/cask-fonts
-  - homebrew/core
-  - homebrew/cask
   - 1password/tap
 
 homebrew_installed_packages:
@@ -31,7 +29,9 @@ homebrew_installed_packages:
   - aws-shell
   - black
   - checkmake
+  - cowsay
   - curl
+  - fortune
   - gh
   - git
   - groovy
@@ -75,7 +75,6 @@ homebrew_cask_apps:
   # - firefox
   - font-meslo-lg-nerd-font
   - iterm2
-  # - slack
   - sublime-text
   - sublime-merge
   - scroll-reverser

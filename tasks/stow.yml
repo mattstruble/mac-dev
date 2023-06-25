@@ -10,6 +10,7 @@
     dest: "{{ dotfiles_repo_local_destination }}"
     version: "{{ dotfiles_repo_version }}"
     accept_hostkey: "{{ dotfiles_repo_accept_hostkey }}"
+  ignore_errors: true
 
 - name: Ensure stow installed
   package:
@@ -25,9 +26,7 @@
   become: false
 
 - name: Stow dotfiles
-  environment:
-    STOW_DIR: "{{ item.path | dirname }}"
-  shell: "stow {{ item.path | basename }}"
+  shell: "stow -d {{ item.path | dirname }} -t ~ -R {{ item.path | basename }}"
   with_items: "{{ files.files }}"
   changed_when: false
   become: false

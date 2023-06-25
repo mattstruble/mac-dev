@@ -34,6 +34,7 @@ homebrew_installed_packages:
   - fortune
   - gh
   - git
+  - gnupg2
   - groovy
   - koekeishiya/formulae/skhd
   - koekeishiya/formulae/yabai
@@ -41,6 +42,7 @@ homebrew_installed_packages:
   - markdown-toc
   - npm
   - nvim
+  - pinentry-mac
   - pyenv
   - pyenv-virtualenv
   - python3
@@ -62,7 +64,9 @@ homebrew_installed_packages:
   - yaml-language-server
   - yamllint
   - yarn
+  - ykman
   - yubikey-agent
+  - yubikey-personalization
   - zsh-history-substring-search
   - zsh-syntax-highlighting
   - zsh-autosuggestions

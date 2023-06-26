@@ -14,30 +14,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
-      - name: Setup Python
-        uses: actions/setup-python@v2
+      - uses: actions/setup-python@v4
         with:
           python-version: "3.x"
+          cache: "pip"
 
-      - name: Install linters
-        run: pip3 install yamllint ansible ansible-lint
+      - run: pip3 install yamllint ansible ansible-lint
 
-      - name: Lint code
-        run: |
-          yamllint .
-          ansible-lint
-          ansible-playbook main.yml --syntax-check
+      - run: yamllint .
+
+      - run: ansible-lint
 
   integration:
     name: Integration
     runs-on: macos-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Remove existing brew
         run: |
@@ -54,6 +49,9 @@ jobs:
           sudo rm -rf /Applications/Firefox.app
           sudo rm -rf /Applications/Google\ Chrome.app
           sudo rm -rf /usr/local/bin/firefox
+
+      - name: Validate Syntax
+        run: ansible-playbook main.yml --syntax-check
 
       - name: Test playbook
         run: make run

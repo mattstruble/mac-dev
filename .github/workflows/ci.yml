@@ -1,6 +1,6 @@
 ---
 name: CI
-on:
+"on":
   pull_request:
   push:
     branches:
@@ -55,11 +55,15 @@ jobs:
           sudo rm -rf /Applications/Google\ Chrome.app
           sudo rm -rf /usr/local/bin/firefox
 
-      - name: Install dependencies
-        run: |
-          pip3 install ansible
-
       - name: Test playbook
         run: make run
+        env:
+          ANSIBLE_FORCE_COLOR: "1"
+
+      - name: Test Idempotence
+        run: |
+          idempotence=$(mktemp)
+          make run | tee -a ${idempotence}
+          tail ${idempotence} | grep -q 'changed=0.*failed=0' && (echo 'Idempotence test: pass' && exit 0) || (echo 'Idempotence test: fail' && exit 1)
         env:
           ANSIBLE_FORCE_COLOR: "1"

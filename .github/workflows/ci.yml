@@ -33,13 +33,7 @@ jobs:
 
   integration:
     name: Integration
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os:
-          - macos-latest
-          - macos-12
-          - macos-11
+    runs-on: macos-latest
 
     steps:
       - name: Checkout

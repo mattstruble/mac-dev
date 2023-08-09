@@ -40,16 +40,20 @@ homebrew_installed_packages:
   - koekeishiya/formulae/yabai
   - lazygit
   - markdown-toc
+  - markdownlint-cli
   - npm
   - nvim
   - pinentry-mac
+  - prettier
   - pyenv
   - pyenv-virtualenv
+  - pyright
   - python3
   - pyyaml
   - reattach-to-user-namespace
   - ripgrep
   - ruff
+  - ruff-lsp
   - shellcheck
   - shellharden
   - stow

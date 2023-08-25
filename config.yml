@@ -31,6 +31,7 @@ homebrew_installed_packages:
   - checkmake
   - cowsay
   - curl
+  - fd
   - fortune
   - gh
   - git

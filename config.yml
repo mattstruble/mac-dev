@@ -27,6 +27,9 @@ homebrew_installed_packages:
   - ansible-lint
   - awscli
   - aws-shell
+  - bibtex2html
+  - bibtexconv
+  - biber
   - black
   - checkmake
   - cowsay

@@ -96,7 +96,7 @@ homebrew_cask_apps:
   - 1password
   - 1password-cli
   - docker
-  # - firefox
+  - firefox
   - font-meslo-lg-nerd-font
   - iterm2
   - sublime-text

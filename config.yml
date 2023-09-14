@@ -96,6 +96,8 @@ homebrew_cask_apps:
   - discord
   - yubico-yubikey-manager
   - vagrant
+  - arc 
+  - wacom-tablet
 
 configure_sublime: false
 

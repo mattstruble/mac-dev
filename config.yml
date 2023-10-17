@@ -38,6 +38,7 @@ homebrew_installed_packages:
   - fortune
   - gh
   - git
+  - git-crypt
   - gnupg2
   - groovy
   - koekeishiya/formulae/skhd
@@ -49,6 +50,7 @@ homebrew_installed_packages:
   - nvim
   - pinentry-mac
   - prettier
+  - pre-commit
   - pyenv
   - pyenv-virtualenv
   - pyright
@@ -96,7 +98,7 @@ homebrew_cask_apps:
   - discord
   - yubico-yubikey-manager
   - vagrant
-  - arc 
+  - arc
   - wacom-tablet
 
 configure_sublime: false

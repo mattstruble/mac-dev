@@ -24,7 +24,9 @@ homebrew_taps:
   - 1password/tap
 
 homebrew_installed_packages:
+  - alfred
   - ansible-lint
+  - appcleaner
   - awscli
   - aws-shell
   - bibtex2html
@@ -46,6 +48,7 @@ homebrew_installed_packages:
   - lazygit
   - markdown-toc
   - markdownlint-cli
+  - monitorcontrol
   - npm
   - nvim
   - pinentry-mac

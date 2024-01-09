@@ -29,6 +29,7 @@ homebrew_installed_packages:
   - appcleaner
   - awscli
   - aws-shell
+  - basictex
   - bibtex2html
   - bibtexconv
   - biber
@@ -68,6 +69,7 @@ homebrew_installed_packages:
   - stow
   - sqlite
   - terraform
+  - texlive
   - tmux
   - tree-sitter
   - uncrustify

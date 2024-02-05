@@ -55,6 +55,7 @@ homebrew_installed_packages:
   - pinentry-mac
   - prettier
   - pre-commit
+  - protonmail-bridge
   - pyenv
   - pyenv-virtualenv
   - pyright
@@ -70,6 +71,7 @@ homebrew_installed_packages:
   - sqlite
   - terraform
   - texlive
+  - thunderbird
   - tmux
   - tree-sitter
   - uncrustify

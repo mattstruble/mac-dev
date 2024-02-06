@@ -39,6 +39,7 @@ homebrew_installed_packages:
   - curl
   - fd
   - fortune
+  - fzf
   - gh
   - git
   - git-crypt
@@ -84,6 +85,7 @@ homebrew_installed_packages:
   - ykman
   - yubikey-agent
   - yubikey-personalization
+  - zoxide
   - zsh-history-substring-search
   - zsh-syntax-highlighting
   - zsh-autosuggestions

@@ -50,6 +50,7 @@ homebrew_installed_packages:
   - lazygit
   - markdown-toc
   - markdownlint-cli
+  - menuwhere
   - monitorcontrol
   - npm
   - nvim

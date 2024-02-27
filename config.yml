@@ -38,12 +38,13 @@ homebrew_installed_packages:
   - cowsay
   - curl
   - fd
+  - fish
   - fortune
   - fzf
   - gh
   - git
   - git-crypt
-  - gnupg2
+  - gpg
   - groovy
   - koekeishiya/formulae/skhd
   - koekeishiya/formulae/yabai

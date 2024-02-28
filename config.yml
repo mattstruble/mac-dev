@@ -40,6 +40,7 @@ homebrew_installed_packages:
   - fd
   - fish
   - fortune
+  - font-iosevka-nerd-font
   - fzf
   - gh
   - git

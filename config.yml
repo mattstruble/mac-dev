@@ -22,6 +22,7 @@ dockitems_remove:
 homebrew_taps:
   - homebrew/cask-fonts
   - 1password/tap
+  - FelixKratz/formulae
 
 homebrew_installed_packages:
   - alfred
@@ -34,6 +35,7 @@ homebrew_installed_packages:
   - bibtexconv
   - biber
   - black
+  - borders
   - checkmake
   - cowsay
   - curl
